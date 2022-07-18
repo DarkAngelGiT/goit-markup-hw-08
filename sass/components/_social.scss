@@ -1,0 +1,36 @@
+.social {
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__item:not(:last-child) {
+      margin-right: 10px;
+    }
+    &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+    }
+    &__link--light {
+      color: var(--icon-main-color);
+      transition: background-color var(--animation), transform var(--animation), color var(--animation);
+    }
+    &__link--dark {
+      color: var(--primary-white-color);
+      background-color: var(--background-footer-social-color);
+      transition: background-color var(--animation), transform var(--animation);
+    }
+    &__link:hover,
+    &__link:focus {
+      color: var(--primary-white-color);
+      background-color: var(--accent-color);
+      transform: scale(1.25);
+    }
+    &__icon {
+      fill: currentColor;
+    }
+}

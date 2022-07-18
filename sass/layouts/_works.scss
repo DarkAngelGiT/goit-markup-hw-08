@@ -1,0 +1,35 @@
+.works {
+    &__title {
+      margin-bottom: 50px;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.17;
+      text-align: center;
+      color: var(--title-text-color);
+    }
+    &__list {
+      display: flex;
+    }
+    &__item {
+      position: relative;
+    }
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
+    &__text {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70px;
+      width: 100%;
+      background-color: var(--background-color-works);
+      font-weight: 700;
+      line-height: 1.14;
+      text-transform: uppercase;
+      color: var(--primary-white-color);
+    }
+}

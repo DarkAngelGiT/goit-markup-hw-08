@@ -1,0 +1,33 @@
+.clients {
+    &__title {
+      margin-bottom: 50px;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.17;
+      text-align: center;
+      color: var(--title-text-color);
+    }
+    &__item {
+      --items: 6;
+    }
+    &__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 92px;
+      color: var(--icon-main-color);
+      border: 1px solid var(--icon-main-color);
+      border-radius: 4px;
+    
+      transition: color var(--animation), border-color var(--animation);
+    }
+    &__link:hover,
+    &__link:focus {
+      border-color: var(--accent-color);
+      color: var(--accent-color);
+      animation: scaler 1500ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__icon {
+      fill: currentColor;
+    }
+}

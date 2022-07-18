@@ -1,0 +1,13 @@
+@keyframes scaler {
+  0% {
+    transform: scale(1) rotateZ(0deg);
+  }
+
+  50% {
+    transform: scale(1.15) rotateZ(180deg);
+  }
+
+  100% {
+    transform: scale(1) rotateZ(360deg);
+  }
+}

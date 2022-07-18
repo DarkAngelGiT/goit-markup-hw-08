@@ -1,0 +1,56 @@
+.examples {
+    &__container {
+      display: block;
+      padding: 20px 24px;
+      border: 1px solid var(--border-portf-color);
+      border-top: none;
+    }
+    &__box {
+      position: relative;
+      overflow: hidden;
+    }
+    &__title {
+      margin-bottom: 4px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 2;
+      letter-spacing: 0.06em;
+      color: var(--title-text-color);
+    }
+    &__link {
+      display: block;
+      position: relative;    
+      transition: box-shadow var(--animation);
+    }
+    &__link:hover,
+    &__link:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 1.88;
+      color: var(--primary-text-color);
+    }
+    &--overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 63px 24px;
+      text-align: left;
+      color: var(--primary-white-color);
+      background-color: rgba(33, 150, 243, 0.9);
+      font-size: 18px;
+      line-height: 1.56;
+    
+      transform: translateY(100%);
+    
+      transition: transform var(--animation);
+    }
+    &__link:hover &--overlay,
+    &__link:focus &--overlay {
+      transform: translateY(0);
+    }
+}
