@@ -116,13 +116,10 @@ body.no-scroll {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: calc(-1 * var(--indent) / 2);
-}
-
-.card-set__item {
-  -ms-flex-preferred-size: calc((100% - var(--indent) * var(--items)) / var(--items));
-      flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
-  margin: calc(var(--indent) / 2);
+  gap: var(--indent);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container {
@@ -139,7 +136,7 @@ body.no-scroll {
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 480px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -149,8 +146,14 @@ body.no-scroll {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .btn {
@@ -444,10 +447,10 @@ body.no-scroll {
 /*================================ HERO */
 .hero {
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
-  padding: 200px 0;
+  padding: 118px 0;
   text-align: center;
   background-color: var(--background-color-footer);
   color: var(--primary-white-color);
@@ -457,26 +460,52 @@ body.no-scroll {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+    height: 600px;
+  }
+}
 .hero__title {
   margin: 0 auto;
   margin-bottom: 30px;
-  width: 696px;
+  width: 360px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
 }
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+  }
+}
 
-.features.section {
-  padding-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .features.section {
+    padding-bottom: 0;
+  }
 }
 .features__box {
   height: 120px;
   margin-bottom: 30px;
-  padding: 25px 100px;
+  padding: 25px 190px;
   background-color: var(--background-color-secondary);
   border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .features__box {
+    padding: 25px 142px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__box {
+    padding: 25px 100px;
+  }
 }
 .features__title {
   margin-bottom: 10px;
@@ -486,18 +515,56 @@ body.no-scroll {
   text-transform: uppercase;
   color: var(--title-text-color);
 }
-.features__list {
-  --items: 4;
+@media screen and (min-width: 480px) {
+  .features__title {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 480px) {
+  .features__list {
+    --items: 1;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features__list {
+    --items: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__list {
+    --items: 4;
+  }
 }
 .features__item {
   display: block;
-  -ms-flex-preferred-size: 270px;
-      flex-basis: 270px;
+}
+@media screen and (min-width: 480px) {
+  .features__item {
+    -ms-flex-preferred-size: 450px;
+        flex-basis: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features__item {
+    -ms-flex-preferred-size: 354px;
+        flex-basis: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item {
+    -ms-flex-preferred-size: 270px;
+        flex-basis: 270px;
+  }
 }
 .features__text {
   line-height: 1.71;
 }
 
+@media screen and (max-width: 1199px) {
+  .works {
+    display: none;
+  }
+}
 .works__title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -545,22 +612,44 @@ body.no-scroll {
 }
 .team__box {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .team__box {
+    padding-bottom: 30px;
+  }
 }
 .team__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   color: var(--title-text-color);
 }
+@media screen and (min-width: 1200px) {
+  .team__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
 .team__item {
-  --items: 4;
+  --items: 1;
   background-color: var(--primary-white-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    --items: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    --items: 4;
+  }
 }
 .team__name, .team__text {
   font-size: 16px;
@@ -575,17 +664,49 @@ body.no-scroll {
 .team__text {
   margin-bottom: 16px;
 }
+.team__img {
+  width: 450px;
+  height: 460px;
+}
+@media screen and (min-width: 768px) {
+  .team__img {
+    width: 354px;
+    height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__img {
+    width: 270px;
+    height: 260px;
+  }
+}
 
 .clients__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   color: var(--title-text-color);
 }
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
 .clients__item {
-  --items: 6;
+  --items: 2;
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    --items: 3;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    --items: 6;
+  }
 }
 .clients__link {
   display: -webkit-box;
@@ -597,12 +718,23 @@ body.no-scroll {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 210px;
   height: 92px;
   color: var(--icon-main-color);
   border: 1px solid var(--icon-main-color);
   border-radius: 4px;
   -webkit-transition: color var(--animation), border-color var(--animation);
   transition: color var(--animation), border-color var(--animation);
+}
+@media screen and (min-width: 768px) {
+  .clients__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+  }
 }
 .clients__link:hover, .clients__link:focus {
   border-color: var(--accent-color);
