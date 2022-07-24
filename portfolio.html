@@ -21,6 +21,7 @@
   <body>
     <header class="header">
       <div class="header__box container">
+        <!-- Навігація -->
         <nav class="nav">
           <a class="logo logo--dark link" href="./index.html" lang="en">
             <span class="logo__accent">Web</span>Studio
@@ -37,6 +38,52 @@
             </li>
           </ul>
         </nav>
+        <!-- Мобільне меню -->
+        <button class="mobile-menu-btn" type="button" data-menu-button>
+          <svg class="mobile-menu-icon" width="24" height="16">
+            <use class="mobile-menu-burger" href="./images/icons.svg#burger-menu"></use>
+            <use class="mobile-menu-close" href="./images/icons.svg#menu-close"></use>
+          </svg>
+        </button>
+
+        <div class="mobile-menu" data-menu>
+          <ul class="mobile-menu-nav list">
+            <li class="mobile-menu-nav-item">
+              <a class="mobile-menu-link link" href="./index.html">Студия </a>
+            </li>
+            <li class="mobile-menu-nav-item">
+              <a class="mobile-menu-link link current" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-menu-nav-item">
+              <a class="mobile-menu-link link" href="">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-menu-contacts list">
+            <li class="mobile-menu-contacts-item">
+              <a class="mobile-menu-contacts-link link accent" href=""> +38 096 111 11 11 </a>
+            </li>
+            <li class="mobile-menu-contacts-item">
+              <a class="mobile-menu-contacts-link link" href="">info@devstudio.com</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-menu-socials list">
+            <li class="mobile-menu-socials-item">
+              <a class="mobile-menu-socials-link link" href=""> Instagram </a>
+            </li>
+            <li class="mobile-menu-socials-item">
+              <a class="mobile-menu-socials-link link" href="">Twitter</a>
+            </li>
+            <li class="mobile-menu-socials-item">
+              <a class="mobile-menu-socials-link link" href="">Facebook</a>
+            </li>
+            <li class="mobile-menu-socials-item">
+              <a class="mobile-menu-socials-link link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Contacts -->
         <ul class="contact list">
           <li class="contact__item">
             <a class="contact__link link" href="mailto:info@devstudio.com" aria-label="Email">
@@ -84,13 +131,39 @@
             <li class="examples__item card-set__item">
               <a class="examples__link link" href="">
                 <div class="examples__box">
-                  <img
-                    class="examples__img"
-                    src="./images/portfolio1.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-1_lg_370.jpg 1x,
+                        ./images/portfolio/img-1_lg_740.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-1_md_354.jpg 1x,
+                        ./images/portfolio/img-1_md_708.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-1_sm_450.jpg 1x,
+                        ./images/portfolio/img-1_sm_900.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="examples__img"
+                      src="./images/portfolio/portfolio1.jpg"
+                      alt=""
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="examples--overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -106,13 +179,39 @@
             <li class="examples__item card-set__item">
               <a class="examples__link link" href="">
                 <div class="examples__box">
-                  <img
-                    class="examples__img"
-                    src="./images/portfolio2.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-2_lg_370.jpg 1x,
+                        ./images/portfolio/img-2_lg_740.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-2_md_354.jpg 1x,
+                        ./images/portfolio/img-2_md_708.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-2_sm_450.jpg 1x,
+                        ./images/portfolio/img-2_sm_900.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="examples__img"
+                      src="./images/portfolio/portfolio2.jpg"
+                      alt=""
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="examples--overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -130,13 +229,39 @@
             <li class="examples__item card-set__item">
               <a class="examples__link link" href="">
                 <div class="examples__box">
-                  <img
-                    class="examples__img"
-                    src="./images/portfolio3.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-3_lg_370.jpg 1x,
+                        ./images/portfolio/img-3_lg_740.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-3_md_354.jpg 1x,
+                        ./images/portfolio/img-3_md_708.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-3_sm_450.jpg 1x,
+                        ./images/portfolio/img-3_sm_900.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="examples__img"
+                      src="./images/portfolio/portfolio3.jpg"
+                      alt=""
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="examples--overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -152,13 +277,39 @@
             <li class="examples__item card-set__item">
               <a class="examples__link link" href="">
                 <div class="examples__box">
-                  <img
-                    class="examples__img"
-                    src="./images/portfolio4.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-4_lg_370.jpg 1x,
+                        ./images/portfolio/img-4_lg_740.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-4_md_354.jpg 1x,
+                        ./images/portfolio/img-4_md_708.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-4_sm_450.jpg 1x,
+                        ./images/portfolio/img-4_sm_900.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="examples__img"
+                      src="./images/portfolio/portfolio4.jpg"
+                      alt=""
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="examples--overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -174,13 +325,39 @@
             <li class="examples__item card-set__item">
               <a class="examples__link link" href="">
                 <div class="examples__box">
-                  <img
-                    class="examples__img"
-                    src="./images/portfolio5.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-5_lg_370.jpg 1x,
+                        ./images/portfolio/img-5_lg_740.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-5_md_354.jpg 1x,
+                        ./images/portfolio/img-5_md_708.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-5_sm_450.jpg 1x,
+                        ./images/portfolio/img-5_sm_900.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="examples__img"
+                      src="./images/portfolio/portfolio5.jpg"
+                      alt=""
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="examples--overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -196,13 +373,39 @@
             <li class="examples__item card-set__item">
               <a class="examples__link link" href="">
                 <div class="examples__box">
-                  <img
-                    class="examples__img"
-                    src="./images/portfolio6.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-6_lg_370.jpg 1x,
+                        ./images/portfolio/img-6_lg_740.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-6_md_354.jpg 1x,
+                        ./images/portfolio/img-6_md_708.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-6_sm_450.jpg 1x,
+                        ./images/portfolio/img-6_sm_900.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="examples__img"
+                      src="./images/portfolio/portfolio6.jpg"
+                      alt=""
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="examples--overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -218,13 +421,39 @@
             <li class="examples__item card-set__item">
               <a class="examples__link link" href="">
                 <div class="examples__box">
-                  <img
-                    class="examples__img"
-                    src="./images/portfolio7.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-7_lg_370.jpg 1x,
+                        ./images/portfolio/img-7_lg_740.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-7_md_354.jpg 1x,
+                        ./images/portfolio/img-7_md_708.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-7_sm_450.jpg 1x,
+                        ./images/portfolio/img-7_sm_900.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="examples__img"
+                      src="./images/portfolio/portfolio7.jpg"
+                      alt=""
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="examples--overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -240,13 +469,39 @@
             <li class="examples__item card-set__item">
               <a class="examples__link link" href="">
                 <div class="examples__box">
-                  <img
-                    class="examples__img"
-                    src="./images/portfolio8.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-8_lg_370.jpg 1x,
+                        ./images/portfolio/img-8_lg_740.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-8_md_354.jpg 1x,
+                        ./images/portfolio/img-8_md_708.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-8_sm_450.jpg 1x,
+                        ./images/portfolio/img-8_sm_900.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="examples__img"
+                      src="./images/portfolio/portfolio8.jpg"
+                      alt=""
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="examples--overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -262,13 +517,39 @@
             <li class="examples__item card-set__item">
               <a class="examples__link link" href="">
                 <div class="examples__box">
-                  <img
-                    class="examples__img"
-                    src="./images/portfolio9.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-9_lg_370.jpg 1x,
+                        ./images/portfolio/img-9_lg_740.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-9_md_354.jpg 1x,
+                        ./images/portfolio/img-9_md_708.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-9_sm_450.jpg 1x,
+                        ./images/portfolio/img-9_sm_900.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="examples__img"
+                      src="./images/portfolio/portfolio9.jpg"
+                      alt=""
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="examples--overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании

@@ -1,27 +1,49 @@
 .contact {
   display: flex;
   margin-left: auto;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+
+
     &__item:not(:last-child) {
-      margin-right: 50px;
+
+      @media screen and (min-width: 1200px) {
+        margin-right: 50px;
+      }
+      
     }
     &__icon {
       fill: currentColor;
       margin-right: 10px;
     }
-            @media screen and (max-width: 767px) {
-              display: none;
-            }
+  
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
 }
 
 .contact__link {
-  display: flex;
-  align-items: center;
-  padding-bottom: 31px;
-  padding-top: 32px;
-  font-weight: 500;
-  color: var(--primary-text-color);
+color: var(--primary-text-color);      
+      transition: color var(--animation);
+align-items: center;
 
-  transition: color var(--animation);
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: inline-flex;
+      padding-bottom: 10px;      
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.16;      
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;        
+        padding-bottom: 31px;
+        padding-top: 32px;
+    }
+
     &:hover,
     &:focus {
       color: var(--accent-color);

@@ -1,4 +1,17 @@
 .examples {
+  @media screen and (min-width: 480px) {
+    --items: 1;
+  }
+  
+  @media screen and (min-width: 768px) {
+    --items: 2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --items: 3;
+  }
+  
+
     &__container {
       display: block;
       padding: 20px 24px;
@@ -18,7 +31,7 @@
       color: var(--title-text-color);
     }
     &__link {
-      display: block;
+      display: block;      
       position: relative;    
       transition: box-shadow var(--animation);
     }

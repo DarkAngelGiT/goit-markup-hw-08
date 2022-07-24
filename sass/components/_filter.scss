@@ -1,14 +1,24 @@
 .filter__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
 }
 
 .filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter__btn {
+.filter__btn {  
   padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
@@ -20,8 +30,11 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
-
   transition: color var(--animation), background-color var(--animation), box-shadow var(--animation);
+
+  @media screen and (min-width: 480px) {
+      margin-bottom: 15px;
+    }
 
       &--current {
         color: var(--primary-white-color);
