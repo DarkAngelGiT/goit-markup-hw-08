@@ -5,9 +5,13 @@
       margin-bottom: 20px;
       font-weight: 700;
       line-height: 1.14;
-      text-align: center;
+      
       text-transform: uppercase;
       color: var(--primary-white-color);
+
+      @media screen and (max-width: 1199px) {
+        text-align: center;
+      }
     }
     
         @media screen and (min-width: 1200px) {
@@ -28,12 +32,15 @@
   
     &__contact {
       display: flex;
-      float: unset;
+      // float: unset;
       flex-direction: column;
       align-items: center;
 
       @media screen and (min-width: 1200px) {
         margin-right: 70px;
+        // align-items: flex-start;
+        align-items: baseline;
+          justify-content: space-between;
       }
       
     }
@@ -58,7 +65,7 @@
       display: inline-block;
       padding-left: 0;
 
-      @media screen and (min-width: 480px) {
+      @media screen and (max-width: 1199px) {
         text-align: center;
       }
       
