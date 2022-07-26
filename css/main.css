@@ -1326,6 +1326,7 @@ body.no-scroll {
 .examples__link {
   display: block;
   position: relative;
+  height: 100%;
   -webkit-transition: -webkit-box-shadow var(--animation);
   transition: -webkit-box-shadow var(--animation);
   transition: box-shadow var(--animation);

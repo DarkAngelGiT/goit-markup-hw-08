@@ -28,6 +28,7 @@
     &__link {
       display: block;      
       position: relative;    
+      height: 100%;
       transition: box-shadow var(--animation);
     
       @media screen and (min-width: 768px) and (max-width: 1199px) {
