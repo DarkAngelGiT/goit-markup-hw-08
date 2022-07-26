@@ -8,7 +8,16 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--indent);
+  
+  @media screen and (max-width: 479px) {
+    justify-content: center;
+    // flex-direction: column;
+  }
 
+    // @media screen and (max-width: 767px) {
+      
+      
+    // }
 }
 
 .card-set__item {

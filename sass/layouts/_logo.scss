@@ -11,6 +11,10 @@
     align-items: center;
     margin-right: 93px;
     color: var(--primary-logo-color);
+
+    @media screen and (max-width: 479px) {
+      margin-right: 10px;
+    }
   }
   &--light {
     margin-bottom: 20px;

@@ -29,8 +29,8 @@
     
   @media screen and (min-width: 768px)  {
       display: flex;
-        flex-direction: row;
-          flex-wrap: wrap;
+      flex-direction: row;
+      flex-wrap: wrap;
       align-items: baseline;
       justify-content: space-around;
   }
@@ -54,7 +54,8 @@
       
     }
     &__mail {
-      display: block;
+      display: block;      
+      
       @media screen and (max-width: 1199px) {
           margin-top: 60px;
         }
@@ -70,7 +71,7 @@
     }        
 
     &__social {
-      @media screen and (min-width: 480px) {
+      @media screen and (min-width: 320px) and (max-width: 767px) {
         margin-top: 60px;
       }
     }
@@ -126,7 +127,7 @@
   filter: drop-shadow(var(--btn-shadow-color));
   border-radius: 4px;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
       width: 100%;
       margin-bottom: 20px;
     }

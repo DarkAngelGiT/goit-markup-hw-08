@@ -25,7 +25,9 @@
   &.is-open {
     transform: translateX(0);
   }
-
+@media screen and (max-width: 479px) {
+  height: 65vh;
+}
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -40,6 +42,11 @@
   letter-spacing: 0.02em;
 
   color: var(--title-text-color);
+
+  @media screen and (max-width: 479px) {
+      font-size: 18px;
+      line-height: 20px;
+    }
 }
 
 .mobile-menu-nav-item {
@@ -63,6 +70,11 @@
   line-height: 28px;
   letter-spacing: 0.02em;
 
+  @media screen and (max-width: 479px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
   // color: var(--primary-text-color);
 }
 .mobile-menu-contacts-link {
@@ -76,6 +88,11 @@
   .accent {
     font-size: 34px;
     color: var(--accent-color);
+
+    @media screen and (max-width: 479px) {
+        font-size: 14px;
+        line-height: 18px;
+      }
   }
 }
 
@@ -89,6 +106,10 @@
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
+
+  @media screen and (max-width: 479px) {
+    font-size: 10px;
+  }
   
 }
 
