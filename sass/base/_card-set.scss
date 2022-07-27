@@ -21,8 +21,11 @@
 }
 
 .card-set__item {
-  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  @media screen and (min-width: 480px) {
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 
+  }
+  
 }
 
 

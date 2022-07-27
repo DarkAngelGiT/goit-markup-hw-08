@@ -34,9 +34,9 @@
   cursor: pointer;
   transition: color var(--animation), background-color var(--animation), box-shadow var(--animation);
 
-  @media screen and (min-width: 480px) {
-      margin-bottom: 15px;
-    }
+  // @media screen and (min-width: 480px) {
+  //     margin-bottom: 15px;
+  //   }
 
       &--current {
         color: var(--primary-white-color);
