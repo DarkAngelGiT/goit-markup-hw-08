@@ -25,9 +25,7 @@
   &.is-open {
     transform: translateX(0);
   }
-// @media screen and (max-width: 479px) {
-//   height: 65vh;
-// }
+
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -40,13 +38,8 @@
   font-size: 40px;
   line-height: 47px;
   letter-spacing: 0.02em;
-
   color: var(--title-text-color);
-
-  // @media screen and (max-width: 479px) {
-  //     font-size: 18px;
-  //     line-height: 20px;
-  //   }
+ 
 }
 
 .mobile-menu-nav-item {

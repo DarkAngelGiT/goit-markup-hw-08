@@ -797,6 +797,8 @@ body.no-scroll {
 }
 .features__item {
   display: block;
+  border-bottom: 1px solid var(--border-bottom-header-color);
+  padding-bottom: 32px;
 }
 .features__text {
   line-height: 1.71;
